@@ -1,0 +1,21 @@
+{
+    "name": "kaser/laravel-tinkoff",
+    "description": "This package init tinkoff api for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergey Kardashov",
+            "email": "dev.kardashov@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0|^8.0",
+        "laravel/framework": "^5.6|^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kaser\\Tinkoff\\": "src/"
+        }
+    }
+}
