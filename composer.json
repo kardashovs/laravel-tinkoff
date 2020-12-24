@@ -17,5 +17,15 @@
         "psr-4": {
             "Kaser\\Tinkoff\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kaser\\Tinkoff\\TinkoffServiceProvider"
+            ],
+            "aliases": {
+                "Tinkoff": "Kaser\\Tinkoff\\TinkoffFacade"
+            }
+        }
     }
 }
