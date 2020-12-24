@@ -6,7 +6,7 @@
 
 ## Установка
 
-* Установка через composer: `composer require shakinm/laravel5-tinkoff:@dev`
+* Установка через composer: `composer require kaser/laravel-tinkoff:@dev`
 * ```php artisan vendor:publish --tag=tinkoff```
 * Если используется Laravel 5.5 и выше, то пропустите следующий шаг:
 
