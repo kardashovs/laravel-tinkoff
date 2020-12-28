@@ -1,17 +1,40 @@
 <?php
 
+namespace Kaser\Tinkoff;
+
+/**
+ * Class TinkoffMerchantAPI
+ *
+ * @category Tinkoff
+ * @package  Tinkoff
+ * @property integer     orderId
+ * @property integer     Count
+ * @property bool|string error
+ * @property bool|string response
+ * @property bool|string customerKey
+ * @property bool|string status
+ * @property bool|string paymentUrl
+ * @property bool|string paymentId
+ */
+
 class TinkoffMerchantAPI
 {
-    private $api_url;
-    private $terminalKey;
-    private $secretKey;
-    private $paymentId;
-    private $status;
-    private $error;
-    private $response;
-    private $paymentUrl;
+    private $_api_url;
+    private $_terminalKey;
+    private $_secretKey;
+    private $_paymentId;
+    private $_status;
+    private $_error;
+    private $_response;
+    private $_paymentUrl;
 
-
+    /**
+     * Constructor
+     *
+     * @param string $terminalKey Your Terminal name
+     * @param string $secretKey   Secret key for terminal
+     * @param string $api_url     Url for API
+     */
     public function __construct($terminalKey, $secretKey, $api_url)
     {
         $this->api_url = $api_url;
